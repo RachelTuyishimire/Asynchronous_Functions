@@ -14,10 +14,7 @@ showMessage("Welcome to Adalab", 3000);
 // returns a Promise with user data when given a user ID. Write an 
 // asynchronous function that fetches and logs the data for each user ID one by one, in sequence.
 
-async function getUserData(id){
-    let id = [];
-    
-}
+
 
 // Question Three
 // You have an asynchronous function performTask() that returns a Promise.
@@ -25,3 +22,12 @@ async function getUserData(id){
 //  Write a function that calls performTask() and logs a custom success message if 
 // the task is successful, and a custom error message if there's an error.
 
+async function performTask() {
+  try {
+    await performTask();
+    console.log("Task completed successfully!");
+  } catch (error) {
+    console.error("Error performing task:", error);
+  }
+}
+performTask();
